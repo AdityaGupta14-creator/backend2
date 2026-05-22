@@ -2,19 +2,21 @@
   "name": "hellobackend",
   "version": "1.0.0",
   "description": "backend",
-  "keywords": [
-    "javascript",
-    "backend"
-  ],
-  "license": "ISC",
-  "author": "aditya",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
+  "author": "aditya",
+  "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.14",
-    "prettier": "^3.8.3"
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.6.2"
   }
 }
